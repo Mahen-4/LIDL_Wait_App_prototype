@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="./styles/style2.css">
+  </head>
+  <body>
+    <header>
+      <img src="./images/icon/LogoWaitAppVdef.png" alt="" height="600px" width="800px" id="logo">
+    </header>
+    <main>
+        <a href="index.html">Jouer</a>
+        <div id="regledujeu">Règle du jeu</div>
+    </main>
+    <div id="RJ">
+      <div id="sombre"></div>
+      <div id="regle">
+      <h1 style="font-size: 90px; color: #2351a7;">Règle du jeu</h1>
+      <h2 style="font-size: 60px;">
+        Ce jeu est très simple !<br><br>
+        -  Deviner le prix des produits LIDL<br><br>
+        -  Vous disposez de 30 secondes<br><br>
+        -  Si vous trouvez le prix avant ce temps vous gagnez 1 points.
+      </h2>
+      <h3 id="close">FERMER</h3>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      let regleJeu = document.getElementById("RJ")
+      const div = document.querySelector("#regledujeu")
+      const main = document.querySelector("main")
+      const closing = document.getElementById("close")
+      
+      div.addEventListener('click', () => {
+        regleJeu.style.display = "block"
+      });
+
+      closing.addEventListener("click", ()=>{
+        regleJeu.style.display = "none"
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wait App</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <header>
+      <!--- <img src="LogoWaitAppVdef.png" height="150" width="300" style="margin-top:-50px; background-color: white; border-radius: 130px;"> 
+        ---->
+      <h3 id="timer"></h3>
+    </header>
+    <main>
+      <div class="jeu">
+        <div class="trio">
+          <h1 id="nomProduit"></h1>
+          <img alt="" id="images">
+          <h4 id="valeur"></h4>
+        </div>
+
+        <h2 id="point">0 pts</h2>
+        <input type="submit" value="Valider !" id="valid">
+        <div class="numpad">
+          <input type="submit" value="Supp" class="btn" style="background-color: #ee1645; color: white;">
+          <input type="submit" value="1" class="btn">
+          <input type="submit" value="2" class="btn">
+          <input type="submit" value="3" class="btn">
+          <input type="submit" value="4" class="btn">
+          <input type="submit" value="5" class="btn">
+          <input type="submit" value="6" class="btn">
+          <input type="submit" value="7" class="btn">
+          <input type="submit" value="8" class="btn">
+          <input type="submit" value="9" class="btn">
+          <input type="submit" value="0" class="btn">
+          <input type="submit" value="." class="btn">
+        </div>
+      </div>
+    </main>
+    <h1 id="pointsFinal"></h1>
+    <h3 id="plusMoins"></h3>
+    <script type="text/javascript" src="app.js">
+    </script>
+  </body>
+</html>
